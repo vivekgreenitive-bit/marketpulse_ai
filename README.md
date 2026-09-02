@@ -23,7 +23,7 @@ MarketPulse.AI is a multi-track AI application that combines live web search int
 
 ```bash
 # Clone repository
-git clone https://github.com/your-repo/marketpulse-ai.git
+git clone https://github.com/vivekgreenitive-bit/marketpulse_ai.git
 cd marketpulse-ai
 
 # Install dependencies
