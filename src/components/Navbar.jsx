@@ -1,7 +1,7 @@
 import React from "react";
-import { Sparkles, Database, ShieldCheck, Search, FileText, Cpu, CheckCircle2 } from "lucide-react";
+import { Sparkles, Database, ShieldCheck, Search, FileText, Cpu } from "lucide-react";
 
-export default function Navbar({ activeTab, setActiveTab, liveStatus }) {
+export default function Navbar({ activeTab, setActiveTab }) {
   return (
     <header className="glass-panel" style={{ borderRadius: 0, borderTop: "none", borderLeft: "none", borderRight: "none", position: "sticky", top: 0, zIndex: 50 }}>
       <div className="container-xl" style={{ height: "76px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
@@ -25,9 +25,7 @@ export default function Navbar({ activeTab, setActiveTab, liveStatus }) {
               <span style={{ fontFamily: "var(--font-heading)", fontWeight: 800, fontSize: "1.35rem", color: "var(--text-main)" }}>
                 MarketPulse<span style={{ color: "var(--g700)" }}>.AI</span>
               </span>
-              
             </div>
-            
           </div>
         </div>
 
@@ -69,24 +67,6 @@ export default function Navbar({ activeTab, setActiveTab, liveStatus }) {
             <Database size={16} /> Data Workspace
           </button>
         </nav>
-
-        {/* Sponsor API Health Indicators */}
-        <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
-              <span className="badge badge-emerald" style={{ padding: "0.15rem 0.45rem", fontSize: "0.65rem" }}>
-                <CheckCircle2 size={10} /> Live SERP
-              </span>
-              <span className="badge badge-indigo" style={{ padding: "0.15rem 0.45rem", fontSize: "0.65rem" }}>
-                <CheckCircle2 size={10} /> Cloud Sync
-              </span>
-              <span className="badge badge-cyan" style={{ padding: "0.15rem 0.45rem", fontSize: "0.65rem" }}>
-                <CheckCircle2 size={10} /> Audit Verified
-              </span>
-            </div>
-            
-          </div>
-        </div>
 
       </div>
     </header>
