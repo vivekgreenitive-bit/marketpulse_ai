@@ -84,9 +84,7 @@ export default function Navbar({ activeTab, setActiveTab, liveStatus }) {
                 <CheckCircle2 size={10} /> Nutrient DWS
               </span>
             </div>
-            <span style={{ fontSize: "0.7rem", color: "var(--text-dim)", marginTop: "2px" }}>
-              Stack Status: Operational
-            </span>
+            
           </div>
         </div>
 
