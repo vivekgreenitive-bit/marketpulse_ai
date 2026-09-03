@@ -27,9 +27,7 @@ export default function Navbar({ activeTab, setActiveTab, liveStatus }) {
               </span>
               
             </div>
-            <p style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>
-              DevNetwork API World Edition
-            </p>
+            
           </div>
         </div>
 
