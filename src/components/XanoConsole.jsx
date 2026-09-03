@@ -104,7 +104,7 @@ export default function XanoConsole({ xanoProjects, lastSyncResult }) {
       {/* Database Table Records */}
       <div className="glass-panel" style={{ padding: "1.5rem" }}>
         <h3 style={{ fontSize: "1.2rem", fontWeight: 600, marginBottom: "1rem", display: "flex", alignItems: "center", gap: "0.5rem" }}>
-          <Database color="#818cf8" size={18} /> Market Projects Table (`market_projects`)
+          <Database color="#818cf8" size={18} /> Saved Market Intelligence Projects
         </h3>
 
         <div style={{ overflowX: "auto" }}>

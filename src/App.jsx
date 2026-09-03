@@ -69,7 +69,7 @@ export default function App() {
       <main className="container-xl" style={{ flex: 1, padding: "2rem 1.5rem" }}>
         {activeTab === "dashboard" && (
           <Dashboard
-            onSearch={handleSearch}
+            onSearch={handleSearch} onNavigate={(tab) => setActiveTab(tab)} onNavigate={(tab) => setActiveTab(tab)}
             isLoading={isLoading}
             currentQuery={currentQuery}
             stats={{ organicCount, shoppingCount }}
@@ -89,7 +89,12 @@ export default function App() {
         )}
 
         {activeTab === "documents" && (
-          <DocumentHub auditRecord={auditRecord} query={currentQuery} />
+          <DocumentHub auditRecord={auditRecord} query={currentQuery} onSignDocument={() => {
+            if (xanoProjects.length > 0) {
+              xanoProjects[0].nutrient_audit_status = "Verified & Digitally Signed";
+              setXanoProjects([...xanoProjects]);
+            }
+          }} />
         )}
 
         {activeTab === "xano" && (

@@ -186,7 +186,7 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
               Inspect raw Google Search, Shopping pricing structures, and News items fetched live via SerpApi JSON API.
             </p>
           </div>
-          <button onClick={() => onSearch(inputQuery)} className="btn-secondary" style={{ width: "100%", justifyContent: "center" }}>
+          <button onClick={() => onNavigate("serpapi")} className="btn-secondary" style={{ width: "100%", justifyContent: "center" }}>
             View Web Intelligence <ArrowRight size={14} />
           </button>
         </div>
@@ -201,7 +201,7 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
               Embeds the interactive Nutrient DWS document viewer, deterministic extraction confidence scores, and digital signature signoff.
             </p>
           </div>
-          <button onClick={() => onSearch(inputQuery)} className="btn-secondary" style={{ width: "100%", justifyContent: "center" }}>
+          <button onClick={() => onNavigate("documents")} className="btn-secondary" style={{ width: "100%", justifyContent: "center" }}>
             View Audit & Export PDF <ArrowRight size={14} />
           </button>
         </div>
@@ -216,7 +216,7 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
               Verify Xano REST API payloads, database schema records, static hosting bundle status, and CLI configuration.
             </p>
           </div>
-          <button onClick={() => onSearch(inputQuery)} className="btn-secondary" style={{ width: "100%", justifyContent: "center" }}>
+          <button onClick={() => onNavigate("xano")} className="btn-secondary" style={{ width: "100%", justifyContent: "center" }}>
             Inspect Data Workspace <ArrowRight size={14} />
           </button>
         </div>

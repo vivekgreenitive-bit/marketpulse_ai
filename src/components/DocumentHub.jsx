@@ -3,11 +3,12 @@ import { Shield, FileCheck, Download, CheckCircle2, UserCheck, Lock, Award, Spar
 import confetti from "canvas-confetti";
 import { NUTRIENT_CREDENTIALS, downloadNutrientPdf } from "../services/nutrient";
 
-export default function DocumentHub({ auditRecord, query }) {
+export default function DocumentHub({ auditRecord, query, onSignDocument }) {
   const [signed, setSigned] = useState(false);
   const [signedBy, setSignedBy] = useState("Hackathon Reviewer");
 
   const handleSignDocument = () => {
+    if (onSignDocument) onSignDocument();
     setSigned(true);
     confetti({
       particleCount: 80,
