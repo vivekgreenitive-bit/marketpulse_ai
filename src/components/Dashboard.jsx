@@ -15,7 +15,7 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
     "AI Document Processing & Signatures",
     "SaaS CRM Tools 2026",
     "Real-time E-Commerce Pricing",
-    "DevNetwork Hackathon APIs"
+    "Enterprise API Connectors"
   ];
 
   return (
@@ -113,7 +113,7 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
         
         <div className="glass-card">
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "0.75rem" }}>
-            <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>SerpApi Signals</span>
+            <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>Web Search Signals</span>
             <div style={{ background: "rgba(99, 102, 241, 0.2)", padding: "0.4rem", borderRadius: "8px", color: "var(--g700)" }}>
               <Cpu size={18} />
             </div>
@@ -122,13 +122,13 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
             {stats.organicCount} Organic
           </div>
           <p style={{ fontSize: "0.8rem", color: "var(--text-dim)", marginTop: "0.25rem" }}>
-            Parsed from live Google Search SERP
+            Parsed from live web search
           </p>
         </div>
 
         <div className="glass-card">
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "0.75rem" }}>
-            <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>Xano Database Sync</span>
+            <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>Cloud Database Sync</span>
             <div style={{ background: "rgba(16, 185, 129, 0.2)", padding: "0.4rem", borderRadius: "8px", color: "var(--g600)" }}>
               <Database size={18} />
             </div>
@@ -137,13 +137,13 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
             Active (CLI)
           </div>
           <p style={{ fontSize: "0.8rem", color: "var(--text-dim)", marginTop: "0.25rem" }}>
-            MarketPulse_DevNetwork_2026 Table
+            Market Intelligence Database
           </p>
         </div>
 
         <div className="glass-card">
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "0.75rem" }}>
-            <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>Nutrient DWS Audit</span>
+            <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>Document Audit Score</span>
             <div style={{ background: "rgba(6, 182, 212, 0.2)", padding: "0.4rem", borderRadius: "8px", color: "#22d3ee" }}>
               <Shield size={18} />
             </div>
@@ -167,7 +167,7 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
             Enterprise Stack
           </div>
           <p style={{ fontSize: "0.8rem", color: "var(--text-dim)", marginTop: "0.25rem" }}>
-            SerpApi + Xano + Nutrient DWS
+            Web + Cloud + Audit Engine
           </p>
         </div>
 
