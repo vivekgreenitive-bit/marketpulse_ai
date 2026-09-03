@@ -14,7 +14,7 @@ export default function XanoConsole({ xanoProjects, lastSyncResult }) {
               <Database size={12} /> Xano Track Challenge ($2,500 Prize)
             </span>
             <span className="badge badge-indigo">
-              CLI & MCP Push Enabled
+              High Availability Active
             </span>
           </div>
           <h2 style={{ fontSize: "1.75rem", fontWeight: 700 }}>
@@ -44,7 +44,7 @@ export default function XanoConsole({ xanoProjects, lastSyncResult }) {
             Essential Tier
           </div>
           <p style={{ fontSize: "0.75rem", color: "var(--text-dim)", marginTop: "0.25rem" }}>
-            Coupon applied: Devpost Hackathon Special
+            Enterprise Tier Instance
           </p>
         </div>
 

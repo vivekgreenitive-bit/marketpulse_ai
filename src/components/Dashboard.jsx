@@ -164,10 +164,10 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
             </div>
           </div>
           <div style={{ fontSize: "1.85rem", fontWeight: 700, fontFamily: "var(--font-heading)" }}>
-            3-Track Stack
+            Enterprise Stack
           </div>
           <p style={{ fontSize: "0.8rem", color: "var(--text-dim)", marginTop: "0.25rem" }}>
-            SerpApi + Xano + Nutrient + Grand Prize
+            SerpApi + Xano + Nutrient DWS
           </p>
         </div>
 

@@ -59,7 +59,7 @@ export default function Navbar({ activeTab, setActiveTab, liveStatus }) {
             className={activeTab === "documents" ? "btn-primary" : "btn-secondary"}
             style={{ padding: "0.45rem 0.9rem", fontSize: "0.85rem" }}
           >
-            <FileText size={16} /> Nutrient DWS Audit
+            <FileText size={16} /> Audit Verified Audit
           </button>
           <button
             onClick={() => setActiveTab("xano")}
@@ -75,13 +75,13 @@ export default function Navbar({ activeTab, setActiveTab, liveStatus }) {
           <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
               <span className="badge badge-emerald" style={{ padding: "0.15rem 0.45rem", fontSize: "0.65rem" }}>
-                <CheckCircle2 size={10} /> SerpApi Ready
+                <CheckCircle2 size={10} /> Live Web
               </span>
               <span className="badge badge-indigo" style={{ padding: "0.15rem 0.45rem", fontSize: "0.65rem" }}>
-                <CheckCircle2 size={10} /> Xano CLI Sync
+                <CheckCircle2 size={10} /> Cloud Sync
               </span>
               <span className="badge badge-cyan" style={{ padding: "0.15rem 0.45rem", fontSize: "0.65rem" }}>
-                <CheckCircle2 size={10} /> Nutrient DWS
+                <CheckCircle2 size={10} /> Audit Verified
               </span>
             </div>
             
