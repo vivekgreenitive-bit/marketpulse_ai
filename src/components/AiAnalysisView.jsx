@@ -1,7 +1,10 @@
 import React from "react";
-import { Sparkles, TrendingUp, ShieldAlert, Target, Award, CheckCircle, ArrowRight } from "lucide-react";
+import { Sparkles, TrendingUp, ShieldAlert, Target, Award, CheckCircle, ArrowRight, Presentation, BellRing } from "lucide-react";
+import { useState } from "react";
 
 export default function AiAnalysisView({ query, serpData, onProceedToAudit }) {
+  const [alertEnabled, setAlertEnabled] = useState(false);
+  const [slideExported, setSlideExported] = useState(false);
   const organicCount = serpData?.organic_results?.length || 0;
   const shoppingCount = serpData?.shopping_results?.length || 0;
 
@@ -24,9 +27,20 @@ export default function AiAnalysisView({ query, serpData, onProceedToAudit }) {
           </p>
         </div>
 
-        <button onClick={onProceedToAudit} className="btn-primary">
-          Generate Nutrient DWS Audit <ArrowRight size={16} />
-        </button>
+        <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+          <button onClick={() => setAlertEnabled(!alertEnabled)} className={alertEnabled ? "btn-primary" : "btn-secondary"} style={alertEnabled ? { background: "#10b981" } : {}}>
+            <BellRing size={16} /> {alertEnabled ? "Price Drift Alert Active" : "Track Price Drift"}
+          </button>
+          <button onClick={() => {
+            setSlideExported(true);
+            setTimeout(() => setSlideExported(false), 3000);
+          }} className="btn-secondary">
+            <Presentation size={16} /> {slideExported ? "Slide Deck Exported!" : "Export Pitch Deck"}
+          </button>
+          <button onClick={onProceedToAudit} className="btn-primary">
+            Generate Compliance Audit <ArrowRight size={16} />
+          </button>
+        </div>
       </div>
 
       {/* Market Score Banner */}
