@@ -25,7 +25,7 @@ export default function Navbar({ activeTab, setActiveTab, liveStatus }) {
               <span style={{ fontFamily: "var(--font-heading)", fontWeight: 800, fontSize: "1.35rem", color: "var(--text-main)" }}>
                 MarketPulse<span style={{ color: "var(--g700)" }}>.AI</span>
               </span>
-              <span className="badge badge-indigo">Hackathon 2026</span>
+              
             </div>
             <p style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>
               DevNetwork API World Edition

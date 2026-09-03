@@ -100,7 +100,7 @@ export default function App() {
       <footer style={{ borderTop: "1px solid var(--border-color)", padding: "1.5rem 0", background: "rgba(7, 9, 14, 0.9)" }}>
         <div className="container-xl" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem", fontSize: "0.8rem", color: "var(--text-muted)" }}>
           <div>
-            Built for <strong>DevNetwork API World [API + Cloud + AI] Hackathon 2026</strong>
+            Powered by <strong>DevNetwork API World Enterprise Stack</strong>
           </div>
           <div style={{ display: "flex", gap: "1rem" }}>
             <span>SerpApi Track ($3,000)</span>
