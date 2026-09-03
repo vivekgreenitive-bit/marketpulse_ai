@@ -18,7 +18,7 @@ export default function XanoConsole({ xanoProjects, lastSyncResult }) {
             </span>
           </div>
           <h2 style={{ fontSize: "1.75rem", fontWeight: 700 }}>
-            Xano Scalable Backend Workspace
+            Enterprise Data Workspace
           </h2>
           <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", marginTop: "0.2rem" }}>
             Instance URL: <code style={{ color: "#34d399" }}>{XANO_CONFIG.instanceUrl}</code> | Workspace: <code style={{ color: "#818cf8" }}>{XANO_CONFIG.workspaceName}</code>

@@ -41,7 +41,7 @@ export default function DocumentHub({ auditRecord, query }) {
             </span>
           </div>
           <h2 style={{ fontSize: "1.75rem", fontWeight: 700 }}>
-            Nutrient DWS Audit & Viewer: "{query}"
+            Compliance Certificate & Audit Viewer: "{query}"
           </h2>
           <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", marginTop: "0.2rem" }}>
             Campaign: <code style={{ color: "#22d3ee" }}>{NUTRIENT_CREDENTIALS.campaign}</code> | Account: <code style={{ color: "#34d399" }}>{NUTRIENT_CREDENTIALS.username}</code>

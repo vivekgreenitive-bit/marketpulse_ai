@@ -38,35 +38,35 @@ export default function Navbar({ activeTab, setActiveTab, liveStatus }) {
             className={activeTab === "dashboard" ? "btn-primary" : "btn-secondary"}
             style={{ padding: "0.45rem 0.9rem", fontSize: "0.85rem" }}
           >
-            <Search size={16} /> Overview & Search
+            <Search size={16} /> Dashboard
           </button>
           <button
             onClick={() => setActiveTab("serpapi")}
             className={activeTab === "serpapi" ? "btn-primary" : "btn-secondary"}
             style={{ padding: "0.45rem 0.9rem", fontSize: "0.85rem" }}
           >
-            <Cpu size={16} /> SerpApi Live Web
+            <Cpu size={16} /> Web Intelligence
           </button>
           <button
             onClick={() => setActiveTab("analysis")}
             className={activeTab === "analysis" ? "btn-primary" : "btn-secondary"}
             style={{ padding: "0.45rem 0.9rem", fontSize: "0.85rem" }}
           >
-            <Sparkles size={16} /> AI Strategy
+            <Sparkles size={16} /> AI Insights
           </button>
           <button
             onClick={() => setActiveTab("documents")}
             className={activeTab === "documents" ? "btn-primary" : "btn-secondary"}
             style={{ padding: "0.45rem 0.9rem", fontSize: "0.85rem" }}
           >
-            <FileText size={16} /> Audit Verified Audit
+            <FileText size={16} /> Compliance & Audit
           </button>
           <button
             onClick={() => setActiveTab("xano")}
             className={activeTab === "xano" ? "btn-primary" : "btn-secondary"}
             style={{ padding: "0.45rem 0.9rem", fontSize: "0.85rem" }}
           >
-            <Database size={16} /> Xano Backend
+            <Database size={16} /> Data Workspace
           </button>
         </nav>
 
@@ -75,7 +75,7 @@ export default function Navbar({ activeTab, setActiveTab, liveStatus }) {
           <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
               <span className="badge badge-emerald" style={{ padding: "0.15rem 0.45rem", fontSize: "0.65rem" }}>
-                <CheckCircle2 size={10} /> Live Web
+                <CheckCircle2 size={10} /> Live SERP
               </span>
               <span className="badge badge-indigo" style={{ padding: "0.15rem 0.45rem", fontSize: "0.65rem" }}>
                 <CheckCircle2 size={10} /> Cloud Sync

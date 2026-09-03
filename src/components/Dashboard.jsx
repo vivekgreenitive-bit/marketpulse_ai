@@ -46,7 +46,7 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
           </h1>
           
           <p style={{ fontSize: "1.1rem", color: "var(--text-muted)", marginBottom: "2rem" }}>
-            Extract live search data with <strong style={{ color: "var(--g700)" }}>SerpApi</strong>, store structured models in <strong style={{ color: "var(--g600)" }}>Xano</strong>, and generate auditable PDF reports with <strong style={{ color: "#22d3ee" }}>Nutrient DWS</strong>.
+            Extract real-time web intelligence, store structured market models in a cloud workspace, and generate compliant, auditable reports with human sign-off.
           </p>
 
           {/* Search Form */}
@@ -180,14 +180,14 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.75rem" }}>
               <Cpu color="#818cf8" size={20} />
-              <h3 style={{ fontSize: "1.15rem", fontWeight: 600 }}>1. SerpApi Live Search Engine</h3>
+              <h3 style={{ fontSize: "1.15rem", fontWeight: 600 }}>1. Real-Time Web Intelligence</h3>
             </div>
             <p style={{ fontSize: "0.9rem", color: "var(--text-muted)", marginBottom: "1rem" }}>
               Inspect raw Google Search, Shopping pricing structures, and News items fetched live via SerpApi JSON API.
             </p>
           </div>
           <button onClick={() => onSearch(inputQuery)} className="btn-secondary" style={{ width: "100%", justifyContent: "center" }}>
-            View SerpApi JSON Data <ArrowRight size={14} />
+            View Web Intelligence <ArrowRight size={14} />
           </button>
         </div>
 
@@ -195,7 +195,7 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.75rem" }}>
               <FileText color="#22d3ee" size={20} />
-              <h3 style={{ fontSize: "1.15rem", fontWeight: 600 }}>2. Nutrient DWS Audit Hub</h3>
+              <h3 style={{ fontSize: "1.15rem", fontWeight: 600 }}>2. Compliance & Audit Hub</h3>
             </div>
             <p style={{ fontSize: "0.9rem", color: "var(--text-muted)", marginBottom: "1rem" }}>
               Embeds the interactive Nutrient DWS document viewer, deterministic extraction confidence scores, and digital signature signoff.
@@ -210,14 +210,14 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.75rem" }}>
               <Database color="#34d399" size={20} />
-              <h3 style={{ fontSize: "1.15rem", fontWeight: 600 }}>3. Xano Backend Console</h3>
+              <h3 style={{ fontSize: "1.15rem", fontWeight: 600 }}>3. Enterprise Data Workspace</h3>
             </div>
             <p style={{ fontSize: "0.9rem", color: "var(--text-muted)", marginBottom: "1rem" }}>
               Verify Xano REST API payloads, database schema records, static hosting bundle status, and CLI configuration.
             </p>
           </div>
           <button onClick={() => onSearch(inputQuery)} className="btn-secondary" style={{ width: "100%", justifyContent: "center" }}>
-            Inspect Xano Payload <ArrowRight size={14} />
+            Inspect Data Workspace <ArrowRight size={14} />
           </button>
         </div>
 
