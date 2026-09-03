@@ -29,7 +29,7 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
           right: "-50px",
           width: "300px",
           height: "300px",
-          background: "radial-gradient(circle, rgba(99,102,241,0.2) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(34,168,87,0.15) 0%, transparent 70%)",
           borderRadius: "50%",
           pointerEvents: "none"
         }} />
@@ -42,15 +42,15 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
           </div>
           
           <h1 style={{ fontSize: "2.75rem", fontWeight: 800, lineHeight: 1.15, marginBottom: "1rem" }}>
-            Autonomous Market Analysis & <span style={{ background: "linear-gradient(135deg, #6366f1 0%, #34d399 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Compliant Contract Generation</span>
+            Autonomous Market Analysis & <span style={{ background: "linear-gradient(135deg, #1a7a3c 0%, #22a857 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Compliant Contract Generation</span>
           </h1>
           
           <p style={{ fontSize: "1.1rem", color: "var(--text-muted)", marginBottom: "2rem" }}>
-            Extract live search data with <strong style={{ color: "#818cf8" }}>SerpApi</strong>, store structured models in <strong style={{ color: "#34d399" }}>Xano</strong>, and generate auditable PDF reports with <strong style={{ color: "#22d3ee" }}>Nutrient DWS</strong>.
+            Extract live search data with <strong style={{ color: "var(--g700)" }}>SerpApi</strong>, store structured models in <strong style={{ color: "var(--g600)" }}>Xano</strong>, and generate auditable PDF reports with <strong style={{ color: "#22d3ee" }}>Nutrient DWS</strong>.
           </p>
 
           {/* Search Form */}
-          <form onSubmit={handleSubmit} style={{ display: "flex", gap: "0.75rem", background: "rgba(10, 14, 23, 0.9)", padding: "0.5rem", borderRadius: "14px", border: "1px solid rgba(99, 102, 241, 0.4)", boxShadow: "0 10px 30px rgba(0,0,0,0.5)" }}>
+          <form onSubmit={handleSubmit} style={{ display: "flex", gap: "0.75rem", background: "#ffffff", padding: "0.5rem", borderRadius: "14px", border: "1px solid rgba(26, 122, 60, 0.3)", boxShadow: "0 10px 30px rgba(0,0,0,0.5)" }}>
             <div style={{ display: "flex", alignItems: "center", paddingLeft: "1rem", color: "var(--text-muted)", flex: 1 }}>
               <Search size={20} style={{ marginRight: "0.75rem" }} />
               <input
@@ -63,7 +63,7 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
                   background: "transparent",
                   border: "none",
                   outline: "none",
-                  color: "#ffffff",
+                  color: "var(--text-main)",
                   fontSize: "1.05rem",
                   fontFamily: "var(--font-body)"
                 }}
@@ -114,7 +114,7 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
         <div className="glass-card">
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "0.75rem" }}>
             <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>SerpApi Signals</span>
-            <div style={{ background: "rgba(99, 102, 241, 0.2)", padding: "0.4rem", borderRadius: "8px", color: "#818cf8" }}>
+            <div style={{ background: "rgba(99, 102, 241, 0.2)", padding: "0.4rem", borderRadius: "8px", color: "var(--g700)" }}>
               <Cpu size={18} />
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function Dashboard({ onSearch, isLoading, currentQuery, stats }) 
         <div className="glass-card">
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "0.75rem" }}>
             <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>Xano Database Sync</span>
-            <div style={{ background: "rgba(16, 185, 129, 0.2)", padding: "0.4rem", borderRadius: "8px", color: "#34d399" }}>
+            <div style={{ background: "rgba(16, 185, 129, 0.2)", padding: "0.4rem", borderRadius: "8px", color: "var(--g600)" }}>
               <Database size={18} />
             </div>
           </div>

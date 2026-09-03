@@ -12,18 +12,18 @@ export default function Navbar({ activeTab, setActiveTab, liveStatus }) {
             width: "42px",
             height: "42px",
             borderRadius: "12px",
-            background: "linear-gradient(135deg, #6366f1 0%, #a855f7 100%)",
+            background: "linear-gradient(135deg, #1a7a3c 0%, #22a857 100%)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            boxShadow: "0 0 20px rgba(99, 102, 241, 0.4)"
+            boxShadow: "0 0 20px rgba(26, 122, 60, 0.3)"
           }}>
             <Sparkles size={22} color="#ffffff" />
           </div>
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-              <span style={{ fontFamily: "var(--font-heading)", fontWeight: 800, fontSize: "1.35rem", color: "#ffffff" }}>
-                MarketPulse<span style={{ color: "#818cf8" }}>.AI</span>
+              <span style={{ fontFamily: "var(--font-heading)", fontWeight: 800, fontSize: "1.35rem", color: "var(--text-main)" }}>
+                MarketPulse<span style={{ color: "var(--g700)" }}>.AI</span>
               </span>
               <span className="badge badge-indigo">Hackathon 2026</span>
             </div>
@@ -34,7 +34,7 @@ export default function Navbar({ activeTab, setActiveTab, liveStatus }) {
         </div>
 
         {/* Navigation Tabs */}
-        <nav style={{ display: "flex", alignItems: "center", gap: "0.5rem", background: "rgba(10, 14, 23, 0.8)", padding: "0.35rem", borderRadius: "12px", border: "1px solid var(--border-color)" }}>
+        <nav style={{ display: "flex", alignItems: "center", gap: "0.5rem", background: "#ffffff", padding: "0.35rem", borderRadius: "12px", border: "1px solid var(--border-color)" }}>
           <button
             onClick={() => setActiveTab("dashboard")}
             className={activeTab === "dashboard" ? "btn-primary" : "btn-secondary"}

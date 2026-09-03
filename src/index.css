@@ -1,27 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  --bg-primary: #07090e;
-  --bg-secondary: #0d111a;
-  --bg-card: rgba(18, 24, 38, 0.7);
-  --bg-card-hover: rgba(26, 34, 53, 0.85);
-  --border-color: rgba(255, 255, 255, 0.08);
-  --border-glow: rgba(99, 102, 241, 0.3);
+  /* Greenitive Brand Greens */
+  --g900: #0d4a24;
+  --g800: #145e2e;
+  --g700: #1a7a3c;
+  --g600: #22a857;
+  --g500: #2ec96a;
+  --g400: #4dd17c;
+  --g100: #ebf7f0;
+  --g50: #f4fbf7;
 
-  --accent-primary: #6366f1;
-  --accent-primary-hover: #4f46e5;
-  --accent-emerald: #10b981;
-  --accent-amber: #f59e0b;
-  --accent-cyan: #06b6d4;
-  --accent-purple: #a855f7;
-  --accent-rose: #f43f5e;
+  /* Greenitive Clean Light Theme Backgrounds */
+  --bg-primary: #f7faf8;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #ffffff;
+  --border-color: rgba(26, 122, 60, 0.14);
+  --border-glow: rgba(34, 168, 87, 0.4);
 
-  --text-main: #f3f4f6;
-  --text-muted: #9ca3af;
-  --text-dim: #6b7280;
+  --accent-primary: #1a7a3c;
+  --accent-primary-hover: #145e2e;
+  --accent-emerald: #22a857;
+  --accent-amber: #d97706;
+  --accent-cyan: #0284c7;
+  --accent-purple: #7c3aed;
+  --accent-rose: #e11d48;
 
-  --font-heading: 'Outfit', sans-serif;
+  --text-main: #0f2318;
+  --text-muted: #3d5c48;
+  --text-dim: #648270;
+
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
   --font-body: 'Inter', sans-serif;
+
+  --shadow-sm: 0 2px 8px rgba(26, 122, 60, 0.06);
+  --shadow-card: 0 4px 20px rgba(26, 122, 60, 0.08);
+  --shadow-g: 0 8px 30px rgba(26, 122, 60, 0.16);
 }
 
 * {
@@ -36,11 +51,10 @@ body {
   font-family: var(--font-body);
   min-height: 100vh;
   overflow-x: hidden;
-  line-height: 1.5;
+  line-height: 1.6;
   background-image: 
-    radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.12) 0%, transparent 40%),
-    radial-gradient(circle at 85% 75%, rgba(16, 185, 129, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.05) 0%, transparent 60%);
+    radial-gradient(circle at 10% 10%, rgba(34, 168, 87, 0.06) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(26, 122, 60, 0.05) 0%, transparent 40%);
   background-attachment: fixed;
 }
 
@@ -48,6 +62,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   color: var(--text-main);
   letter-spacing: -0.02em;
+}
+
+/* Greenitive Gradient Text (.gt) */
+.gt {
+  background: linear-gradient(135deg, var(--g700), var(--g600));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Custom Scrollbars */
@@ -59,106 +81,106 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(26, 122, 60, 0.25);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(99, 102, 241, 0.5);
+  background: var(--g700);
 }
 
-/* Glassmorphism Card Container */
+/* Greenitive Card & Glass Panels */
 .glass-panel {
   background: var(--bg-card);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--border-color);
   border-radius: 16px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-card);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass-panel:hover {
-  border-color: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-color: var(--border-glow);
+  box-shadow: var(--shadow-g);
 }
 
 .glass-card {
-  background: rgba(15, 21, 33, 0.6);
+  background: #ffffff;
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 1.25rem;
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .glass-card:hover {
   transform: translateY(-2px);
-  border-color: var(--border-glow);
+  border-color: var(--g600);
+  box-shadow: 0 6px 20px rgba(26, 122, 60, 0.12);
 }
 
-/* Badges */
+/* Greenitive Badges */
 .badge {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  padding: 0.25rem 0.65rem;
+  padding: 0.3rem 0.75rem;
   border-radius: 9999px;
   font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 .badge-indigo {
-  background: rgba(99, 102, 241, 0.15);
-  color: #818cf8;
-  border: 1px solid rgba(99, 102, 241, 0.3);
+  background: var(--g100);
+  color: var(--g700);
+  border: 1px solid rgba(26, 122, 60, 0.25);
 }
 
 .badge-emerald {
-  background: rgba(16, 185, 129, 0.15);
-  color: #34d399;
-  border: 1px solid rgba(16, 185, 129, 0.3);
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid rgba(21, 128, 61, 0.25);
 }
 
 .badge-amber {
-  background: rgba(245, 158, 11, 0.15);
-  color: #fbbf24;
-  border: 1px solid rgba(245, 158, 11, 0.3);
+  background: #fef3c7;
+  color: #b45309;
+  border: 1px solid rgba(180, 83, 9, 0.25);
 }
 
 .badge-cyan {
-  background: rgba(6, 182, 212, 0.15);
-  color: #22d3ee;
-  border: 1px solid rgba(6, 182, 212, 0.3);
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid rgba(3, 105, 161, 0.25);
 }
 
-/* Buttons */
+/* Greenitive Brand Buttons */
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-primary-hover) 100%);
+  background: linear-gradient(135deg, var(--g700) 0%, var(--g800) 100%);
   color: #ffffff;
   font-weight: 600;
-  padding: 0.65rem 1.25rem;
-  border-radius: 10px;
-  border: none;
+  padding: 0.65rem 1.35rem;
+  border-radius: 8px;
+  border: 1px solid var(--g700);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   transition: all 0.2s ease;
-  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 4px 14px rgba(26, 122, 60, 0.25);
 }
 
 .btn-primary:hover {
-  opacity: 0.95;
+  background: var(--g800);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+  box-shadow: 0 6px 20px rgba(26, 122, 60, 0.35);
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.06);
-  color: var(--text-main);
-  font-weight: 500;
+  background: #ffffff;
+  color: var(--tp);
+  font-weight: 600;
   padding: 0.65rem 1.25rem;
-  border-radius: 10px;
+  border-radius: 8px;
   border: 1px solid var(--border-color);
   cursor: pointer;
   display: inline-flex;
@@ -168,14 +190,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: var(--g50);
+  border-color: var(--g700);
+  color: var(--g700);
 }
 
 /* Loading Animations */
 @keyframes pulse-glow {
-  0%, 100% { opacity: 0.6; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.03); }
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
 }
 
 .animate-pulse-glow {
